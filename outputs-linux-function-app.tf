@@ -21,12 +21,12 @@ output "linux_function_app_service_default_site_hostname" {
 }
 
 output "linux_function_app_service_outbound_ip_addresses" {
-  description = "Outbound IP adresses of the App Service"
+  description = "Outbound IP addresses of the App Service"
   value       = try(split(",", azurerm_linux_function_app.func.0.outbound_ip_addresses), null)
 }
 
 output "linux_function_app_service_possible_outbound_ip_addresses" {
-  description = "Possible outbound IP adresses of the App Service"
+  description = "Possible outbound IP addresses of the App Service"
   value       = try(split(",", azurerm_linux_function_app.func.0.possible_outbound_ip_addresses), null)
 }
 

@@ -21,12 +21,12 @@ output "windows_app_service_default_site_hostname" {
 }
 
 output "windows_app_service_outbound_ip_addresses" {
-  description = "Outbound IP adresses of the Windows App Service"
+  description = "Outbound IP addresses of the Windows App Service"
   value       = try(split(",", azurerm_windows_web_app.appService.0.outbound_ip_addresses), null)
 }
 
 output "windows_app_service_possible_outbound_ip_addresses" {
-  description = "Possible outbound IP adresses of the Windows App Service"
+  description = "Possible outbound IP addresses of the Windows App Service"
   value       = try(split(",", azurerm_windows_web_app.appService.0.possible_outbound_ip_addresses), null)
 }
 
