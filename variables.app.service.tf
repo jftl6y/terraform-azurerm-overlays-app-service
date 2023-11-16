@@ -248,7 +248,7 @@ variable "windows_function_app_site_config" {
     pre_warmed_instance_count         = optional(number)
     remote_debugging_enabled          = optional(bool)
     remote_debugging_version          = optional(string)
-    runtime_scale_moniitoring_enabled = optional(bool)
+    runtime_scale_monitoring_enabled = optional(bool)
     scm_ip_restriction = optional(list(object({
       action = optional(string)
       headers = optional(object({
@@ -414,7 +414,7 @@ variable "linux_function_app_site_config" {
     pre_warmed_instance_count         = optional(number)
     remote_debugging_enabled          = optional(bool)
     remote_debugging_version          = optional(string)
-    runtime_scale_moniitoring_enabled = optional(bool)
+    runtime_scale_monitoring_enabled = optional(bool)
     scm_ip_restriction = optional(list(object({
       action = optional(string)
       headers = optional(object({

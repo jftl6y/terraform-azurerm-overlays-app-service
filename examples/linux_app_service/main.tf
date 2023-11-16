@@ -29,7 +29,7 @@ module "mod_app_service" {
   website_run_from_package      = "1"
   app_service_plan_worker_count = 1
 
-  # App Insights is enabled automaticly in this module. It needs log analytics workspace id.
+  # App Insights is enabled automatically in this module. It needs log analytics workspace id.
   log_analytics_workspace_id = azurerm_log_analytics_workspace.app-log.id
 
   # Key Vault Configuration
